@@ -1,0 +1,3 @@
+[submodule "inspircd-m_sqllog"]
+	path = inspircd-m_sqllog
+	url = https://github.com/allenday/inspircd-m_sqllog

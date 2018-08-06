@@ -10,6 +10,7 @@ ARG RUN_DEPENDENCIES=
 ARG BUILD_DEPENDENCIES=
 
 COPY modules /src/modules
+COPY inspircd-m_sqllog/m_sqllog.cpp /src/modules/extras/
 
 RUN apk add --no-cache --virtual .build-utils gcc g++ make git pkgconfig perl \
        perl-net-ssleay perl-crypt-ssleay perl-lwp-protocol-https \
