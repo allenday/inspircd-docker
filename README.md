@@ -1,5 +1,5 @@
 ```
-docker build --build-arg "CONFIGUREARGS=--enable-extras=m_geoip.cpp --enable-extras=m_mysql.cpp --enable-extras=m_sqllog.cpp" --build-arg "BUILD_DEPENDENCIES=mariadb-dev" --build-arg "RUN_DEPENDENCIES=eoip pcre mariadb" inspircd-docker
+docker build --tag allenday:inspircd-docker --build-arg "CONFIGUREARGS=--enable-extras=m_geoip.cpp --enable-extras=m_mysql.cpp --enable-extras=m_sqllog.cpp" --build-arg "BUILD_DEPENDENCIES=geoip-dev mariadb-dev" --build-arg "RUN_DEPENDENCIES=geoip pcre mariadb-connector-c" inspircd-docker
 ```
 
 # InspIRCd
