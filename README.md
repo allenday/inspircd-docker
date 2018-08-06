@@ -1,3 +1,7 @@
+```
+docker build --build-arg "CONFIGUREARGS=--enable-extras=m_geoip.cpp --enable-extras=m_mysql.cpp --enable-extras=m_sqllog.cpp" --build-arg "BUILD_DEPENDENCIES=mariadb-dev" --build-arg "RUN_DEPENDENCIES=eoip pcre mariadb" inspircd-docker
+```
+
 # InspIRCd
 
 [![Build Status](https://travis-ci.org/inspircd/inspircd-docker.svg?branch=master)](https://travis-ci.org/inspircd/inspircd-docker)
